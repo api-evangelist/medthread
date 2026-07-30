@@ -1,7 +1,31 @@
 aid: medthread
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/medthread.png
 name: MedThread
-description: MedThread is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  MedThread is an AI-powered Health Information Management (HIM) platform built
+  specifically for long-term and post-acute care facilities — skilled nursing
+  facilities (SNFs), nursing homes, assisted living facilities (ALFs), and
+  rehabilitation centers. The platform digitizes paper records with AI-powered
+  scanning, runs continuous automated audits for documentation completeness and
+  regulatory compliance, monitors CMS quality metrics (rehospitalization,
+  pressure ulcers, antipsychotic use), and provides a compliance dashboard,
+  provider portal, and patient-facing Personal Health Record (PHR). MedThread
+  advertises FHIR compatibility and pre-built EHR integrations (Epic, Cerner,
+  Allscripts, eClinicalWorks, NextGen, Meditech, athenahealth, Greenway,
+  Practice Fusion) via a secure API. Techstars-backed and based in Miami, FL. No
+  public developer portal, API reference, or OpenAPI specification is published
+  at this time.
 url: https://raw.githubusercontent.com/api-evangelist/medthread/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +35,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Health Information Management
+- Long-Term Care
+- Post-Acute Care
+- Skilled Nursing
+- FHIR
+- EHR Integration
+- Compliance
+- Patient Records
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +56,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://parambil.com/
+  url: https://www.medthread.health/
+- type: About
+  url: https://www.medthread.health/about
+- type: Support
+  url: https://www.medthread.health/contact
+- type: Login
+  url: https://provider.medthread.net/login
+- type: Conformance
+  url: conformance/medthread-conformance.yml
+- type: Compliance
+  url: https://www.medthread.health/providers
+- type: DomainSecurity
+  url: security/medthread-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
