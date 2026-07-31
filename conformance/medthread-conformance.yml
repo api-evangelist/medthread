@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.medthread.health/providers
+notes: >-
+  MedThread publishes no OpenAPI specification or developer documentation, so
+  these entries are captured from public marketing claims on the provider
+  product page rather than derived from a machine-readable contract. Treat as
+  provider-asserted, not independently verified.
+standards:
+- id: fhir
+  conforms: true
+  evidence: >-
+    Provider page states the platform is "Fully compatible with FHIR standards
+    for healthcare data exchange" and offers pre-built integrations with Epic,
+    Cerner, Allscripts, eClinicalWorks, NextGen, Meditech, athenahealth,
+    Greenway, and Practice Fusion.
+  source: https://www.medthread.health/providers
+- id: hipaa
+  conforms: true
+  evidence: >-
+    Company states MedThread is "fully HIPAA compliant and undergoes regular
+    security audits" for protection of patient health information (PHI).
+  source: https://www.medthread.health/providers
+- id: cms-quality-measures
+  conforms: true
+  evidence: >-
+    Platform advertises real-time CMS quality-metric monitoring
+    (rehospitalization rates, pressure ulcers, antipsychotic use) and PDPM
+    reimbursement optimization for long-term / post-acute care facilities.
+  source: https://www.medthread.health/
+- id: oauth2
+  conforms: false
+  evidence: No public OpenAPI or auth documentation available to confirm.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API specification available to confirm.
